@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>Home</li>
+                <li>About</li>
+                <h1 id="head">Agri style</h1>
+                <li>Contact us</li>
+                <li>Follow</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to "agristyle" World <br> join with me !</h2>
+        <a href="#explore">
+        <button class="btn">Explore Now !</button></a>
+    </section>
+    <section id="explore" class="intro">
+       <div class="intro-img">
+        <img class="shanchi" src="https://lh3.googleusercontent.com/-cGOwoF6Trd8/YQoPYsoJkjI/AAAAAAAACJ8/mdMDGDQjeIwHEboT3R3i5NYzVR0MhkOhgCLcBGAsYHQ/24%2Bagri.jpg" alt="">
+       </div>
+        <div class="intro-text">
+        <h2>Hei this is agri !</h2>
+        <p>Hi this is agrcreations i will do a professional youtube videos for your youtube channel</p>
+        </div>
+    </section>
+
+    <script>
+        let width =  window.innerWidth;
+        if(width <= 600 ){
+            document.getElementById("head").className = "none";
+        }
+    </script>
+</body>
+</html>

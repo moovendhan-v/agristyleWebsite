@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,400;0,600;1,700&family=Poppins&family=Tai+Heritage+Pro&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(159, 159, 255);
+}
+.btn{
+    border: none;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    background-color: rgb(255, 115, 0);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 0.2rem;
+}
+ul li{
+    list-style: none;
+}
+.navbar{
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    /* background-color: rgb(235, 153, 255); */
+    min-height: 10vh;
+
+}
+.hero{
+    min-height: 90vh;
+    background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEiGzNTxx7RPsQ2Q3d03tnUe_Ogt0keqkvIt9hvRn8yHEWFOJZiRatbQnwm6T_ue2Hy9wbkm1R4lVskezwoZMZN_OMs2KBjaEiop32HVZFgaoOh_1jLCXAoulHbvSZBOz4qj2o-krtCP1kzxqY7rHeDRSXxVUWiGlBqc4jhwOh_fK_m6rHgXJv8S6KZW-g=s16000");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h2{
+    margin: 2px;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 5px 3px 5px rgb(218, 106, 14);
+}
+.intro{    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.intro-img{
+    flex: 1 1 30rem;
+    -ms-flex: 1 1 30rem;
+    padding: 20px;
+}
+.intro-text{
+    flex: 1 1 30rem;
+    -ms-flex: 1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: calc(2rem + 0.5vw);
+}
+.intro-img img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .hero h2{
+        font-size: calc(2rem + 1vw);
+    }
+    .navbar{
+        flex-direction: column;
+        line-height: 5rem;
+        justify-content: flex-end;
+    }
+    .none{
+        display: none;
+    }
+}
+
